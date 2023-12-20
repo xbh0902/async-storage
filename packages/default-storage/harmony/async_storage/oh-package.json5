@@ -1,0 +1,12 @@
+{
+  "license": "",
+  "devDependencies": {
+    "rnoh": "file:../rnoh"
+  },
+  "author": "",
+  "name": "rnoh-async-storage",
+  "description": "",
+  "main": "",
+  "version": "2.5.1",
+  "dependencies": {}
+}
