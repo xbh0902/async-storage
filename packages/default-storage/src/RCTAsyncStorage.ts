@@ -1,5 +1,5 @@
 import { NativeModules, TurboModuleRegistry, Platform } from "react-native";
-import { shouldFallbackToLegacyNativeModule } from "./shouldFallbackToLegacyNativeModule";
+import { shouldFallbackToLegacyNativeModule } from "@react-native-async-storage/async-storage/src/shouldFallbackToLegacyNativeModule";
 
 // TurboModuleRegistry falls back to NativeModules so we don't have to try go
 // assign NativeModules' counterparts if TurboModuleRegistry would resolve
