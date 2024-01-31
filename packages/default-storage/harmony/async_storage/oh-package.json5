@@ -1,12 +1,14 @@
 {
   "license": "",
   "devDependencies": {
-    "rnoh": "file:../rnoh"
+
   },
   "author": "",
   "name": "rnoh-async-storage",
   "description": "",
-  "main": "",
+  "main": "ts.ts",
   "version": "2.5.1",
-  "dependencies": {}
+  "dependencies": {
+    "rnoh": "file:../rnoh"
+  }
 }

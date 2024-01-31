@@ -4,8 +4,8 @@ import { shouldFallbackToLegacyNativeModule } from "@react-native-async-storage/
 // TurboModuleRegistry falls back to NativeModules so we don't have to try go
 // assign NativeModules' counterparts if TurboModuleRegistry would resolve
 // with undefined.
-let RCTAsyncStorage = TurboModuleRegistry
-  ? Platform.OS === "harmony"
+// @ts-ignore
+let RCTAsyncStorage = TurboModuleRegistry ? Platform.OS === "harmony"
     ? TurboModuleRegistry.get("RNCAsyncStorage")
     : TurboModuleRegistry.get("PlatformLocalStorage") || // Support for external modules, like react-native-windows
       TurboModuleRegistry.get("RNC_AsyncSQLiteDBStorage") ||
