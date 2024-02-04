@@ -1,7 +1,7 @@
-import AsyncStorage from "@react-native-async-storage/async-storage/src/AsyncStorage";
+import AsyncStorage from "./AsyncStorage";
 
-export { useAsyncStorage } from "@react-native-async-storage/async-storage/src/hooks";
+export { useAsyncStorage } from "./hooks";
 
-export type { AsyncStorageStatic } from "@react-native-async-storage/async-storage/src/types";
+export type { AsyncStorageStatic } from "./types";
 
 export default AsyncStorage;
