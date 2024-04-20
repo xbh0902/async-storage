@@ -4,11 +4,11 @@
 
   },
   "author": "",
-  "name": "rnoh-async-storage",
+  "name": "@react-native-oh-tpl/async-storage",
+  "version": "1.21.0-0.1.4",
   "description": "",
   "main": "ts.ts",
-  "version": "2.5.1",
   "dependencies": {
-    "rnoh": "file:../rnoh"
+    "@rnoh/react-native-openharmony": "file:../react_native_openharmony"
   }
 }

@@ -24,7 +24,7 @@
 
 import relationalStore from '@ohos.data.relationalStore'
 import taskpool from '@ohos.taskpool';
-import { TurboModule, TurboModuleContext } from 'rnoh/ts';
+import { TurboModule, TurboModuleContext } from '@rnoh/react-native-openharmony/ts';
 import ReactDatabaseSupplier from './ReactDatabaseSupplier';
 import AsyncStorageErrorUtil from './AsyncStorageErrorUtil';
 import Logger from './Logger';
