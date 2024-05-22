@@ -34,7 +34,7 @@ export default class ReactDatabaseSupplier {
   static KEY_COLUMN = "key";
   static VALUE_COLUMN = "value"
   private DATABASE_VERSION = 1;
-  private SLEEP_TIME_MS = 30;
+  private SLEEP_TIME_MS = 50;
   private VERSION_TABLE_CREATE =
     "CREATE TABLE IF NOT EXISTS " + ReactDatabaseSupplier.TABLE_CATALYST + " (" +
     ReactDatabaseSupplier.KEY_COLUMN + " TEXT PRIMARY KEY, " +
@@ -75,17 +75,18 @@ export default class ReactDatabaseSupplier {
 
   async ensureDatabase(context: common.UIAbilityContext): Promise<boolean> {
     if(this.rdbStore !== null) return true;
-    for(let tries = 0; tries < 2; tries++) {
-      try {
-        if(tries > 0) await this.deleteRdbStore(context);
-        await this.initialRdbStore(context);
-      } catch (e) {
-        throw new Error(`Ensure database faile!`);
-      }
-      try {
-        await this.sleep(this.SLEEP_TIME_MS)
-      } catch (e) {
-        throw new  Error('Ensure database sleep fail')
+    for(let tries = 0; tries < 3; tries++) {
+      if(this.rdbStore === null){
+        try {
+          await this.initialRdbStore(context);
+        } catch (e) {
+          throw new Error(`Ensure database faile!`);
+        }
+        try {
+          await this.sleep(this.SLEEP_TIME_MS)
+        } catch (e) {
+          throw new  Error('Ensure database sleep fail')
+        }
       }
     }
     if(this.rdbStore === null) {
