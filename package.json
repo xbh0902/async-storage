@@ -1,5 +1,5 @@
 {
-  "name": "@react-native-async-storage/root",
+  "name": "@react-native-oh-tpl/async-storage",
   "version": "1.21.0-0.1.5",
   "private": true,
   "workspaces": [
@@ -31,5 +31,8 @@
     "ts-node": "^10.9.1",
     "recursive-readdir/minimatch": "^3.0.5",
     "serve-handler/minimatch": "^3.0.5"
+  },
+  "harmony": {
+    "alias": "async-storage"
   }
 }
