@@ -1,5 +1,5 @@
 {
-  "name": "@react-native-async-storage/root",
+  "name": "@react-native-oh-tpl/async-storage",
   "version": "1.21.0-0.1.5",
   "private": true,
   "workspaces": [
