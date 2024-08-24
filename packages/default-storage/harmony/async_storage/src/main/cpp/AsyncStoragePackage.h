@@ -23,7 +23,7 @@
  */
 
 #include "RNOH/Package.h"
-#include "RNAsyncStorageTurboModule.h"
+#include "RNCAsyncStorage.h"
 
 using namespace rnoh;
 using namespace facebook;
@@ -31,7 +31,7 @@ class NativeRNAsyncStorageFactoryDelegate : public TurboModuleFactoryDelegate {
   public:
     SharedTurboModule createTurboModule(Context ctx,const std::string &name) const override {
       if (name == "RNCAsyncStorage") {
-          return std::make_shared<RNAsyncStorageTurboModule>(ctx, name);
+          return std::make_shared<RNCAsyncStorage>(ctx, name);
       }
       return nullptr;
     };

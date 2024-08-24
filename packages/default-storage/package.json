@@ -10,7 +10,13 @@
     "registry": "https://npm.pkg.github.com"
   },
   "harmony": {
-    "alias": "@react-native-async-storage/async-storage"
+    "alias": "@react-native-async-storage/async-storage",
+    "codegenConfig": {
+      "version": 2,
+      "specPaths": [
+        "./src"
+      ]
+    }
   },
   "files": [
     "harmony/",
