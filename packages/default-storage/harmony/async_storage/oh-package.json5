@@ -5,7 +5,7 @@
   },
   "author": "",
   "name": "@react-native-oh-tpl/async-storage",
-  "version": "1.21.0-0.1.6",
+  "version": "1.21.0-0.1.7",
   "description": "",
   "main": "ts.ts",
   "dependencies": {
